@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/14c4cbc0ae.js" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,10 +14,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-        
+
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
+        }
+
+        .text-title {
+            color: #1C1C1C;
+        }
+
+        .text-p {
+            color: #777;
         }
     </style>
 
@@ -25,6 +48,109 @@
 
 <body>
 
+    <!-- Banner Section -->
+    <header class=" container mx-auto font-manrope ">
+        <div class="hero min-h-screen bg-base-200">
+
+            <div class="hero-content flex-col lg:flex-row">
+
+                <div>
+                    <h1 class="text-7xl font-extrabold text-title">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 text-lg text-p font-medium">Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+
+                <div>
+                    <img src="./images/banner.png" class="" />
+                    <!-- Rating Badge -->
+                    <div class="-mt-20 flex items-center w-fit gap-4 p-5 drop-shadow-lg rounded-lg bg-white">
+                        <i class="fa-solid fa-star fa-bounce fa-2xl" style="color: #ffdc64;"></i>
+                        <div>
+                            <h3 class="text-3xl text-3xl font-extrabold text[#1C1C1C]">5.0</h3>
+                            <p class="text-base font-semibold text-[#777]">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto font-manrope">
+
+        <!-- Featured Section -->
+        <section class="text-center my-24">
+            <h2 class="text-5xl text-title font-extrabold pb-5">Our Featured Products</h2>
+            <p class="text-base text-p mx-auto  font-medium w-3/4">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                words which don't look even slightly believable. </p>
+
+            <!-- featured tea Card Container -->
+            <div class="grid grid-cols-1 mx-auto   md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                <!-- 1st card -->
+                <div class="card mt-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-extrabold text-title">Milk Tea</h2>
+                        <p class="text-base font-semibold text-p">Creamer could be replaced by fresh milk</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd card -->
+                <div class="card mt-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-extrabold text-title">Black Tea</h2>
+                        <p class="text-base font-semibold text-p">Creamer could be replaced by fresh milk</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd card -->
+                <div class="card mt-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-extrabold text-title">Lemon Tea</h2>
+                        <p class="text-base font-semibold text-p">Creamer could be replaced by fresh milk</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th card -->
+                <div class="card mt-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-extrabold text-title">Green Tea</h2>
+                        <p class="text-base font-semibold text-p">Creamer could be replaced by fresh milk</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
 </body>
 
 </html>
