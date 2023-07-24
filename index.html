@@ -21,6 +21,7 @@
             theme: {
                 extend: {
                     colors: {
+                        gradient: 'var(--linear, linear-gradient(270deg, #F00 0%, #FF8938 100%))',
                         clifford: '#da373d',
                     }
                 }
@@ -269,6 +270,62 @@
         </section>
 
     </main>
+
+    <footer class=" p-10 bg-[#FFEDE8] text-base-content">
+
+        <div class="container mx-auto flex justify-between items-center pb-24 pt-32 gap-28">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn linear-gradient text-white px-6 py-4 lg:ml-10">Get Started</button>
+            </p>
+
+        </div>
+
+        <div class="footer container mx-auto grid grid-cols-3 lg:flex justify-between">
+
+            <div>
+                <span class="text-title text-lg font-semibold">Quick Links</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+
+            <div>
+                <span class="text-title text-lg font-semibold">Our Service</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+
+            <div>
+                <span class="text-title text-lg font-semibold">Help</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+
+            <div>
+                <span class="text-title text-2xl font-semibold">Subscribe to our <br>newsletter</span>
+                <div class="form-control w-80">
+
+                    <div class="relative">
+                        <input type="text" placeholder=" username@site.com"
+                            class=" py-4 bg-transparent border-b-2 border-black outline-none pr-16" />
+                        <button class="btn linear-gradient  absolute top-0 right-0 rounded-full">
+                            <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+    </footer>
 </body>
 
 </html>
