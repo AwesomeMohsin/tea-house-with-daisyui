@@ -40,6 +40,9 @@
         .text-p {
             color: #777;
         }
+        .linear-gradient{
+            background: var(--linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));
+        }
     </style>
 
 
@@ -49,7 +52,7 @@
 <body>
 
     <!-- Banner Section -->
-    <header class=" container mx-auto font-manrope ">
+    <header class=" container-full mx-auto font-manrope ">
         <div class="hero min-h-screen bg-base-200">
 
             <div class="hero-content flex-col lg:flex-row">
@@ -149,6 +152,43 @@
             </div>
         </section>
 
+        <!-- Great tea section -->
+        <section class="my-24 gap-12 flex flex-col lg:flex-row">
+
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
+
+                <div class="rounded-xl opacity-10 h-32  linear-gradient"></div>
+                <div class="row-span-2 bg-[#E6A6231A]">
+                    <img class=" mx-auto px-8 py-12 rounded-lg" src="./images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 bg-[#E6A6231A]">
+                    <img class=" mx-auto px-8 py-12 rounded-lg" src="./images/fresh-2.png" alt="">
+                </div>
+                <div class="rounded-xl opacity-10 h-32  linear-gradient"></div>
+
+            </div>
+
+            <div class="space-y-5 flex-1">
+                <h3 class="text-5xl font-extrabold text-title">Great Tea, Freshly <br>Presented</h3>
+                <p class="text-base font-medium text-p">
+                    The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+                </p>
+                <h4 class="text-xl font-extrabold mt-8">
+                    Unique Taste
+                </h4>
+                <p class="text-base font-medium text-p">
+                    A Unique and different style from other teapots gives a luxurious and minimalist impression
+                </p>
+                <h4 class="text-xl font-extrabold mt-8">
+                    Premium Quality
+                </h4>
+                <p class="text-base font-medium text-p">
+                    Premium Quality that makes tea more elegant and more durable when you use it.
+                </p>
+            </div>
+
+
+        </section>
 
     </main>
 </body>
